@@ -7,7 +7,10 @@ import { PostsComponent } from '../../modules/posts/posts.component'
 import { SharedModule } from '../../shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatDividerModule } from '@angular/material/divider'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card'
+import { DashboardService } from '../../modules/dashboard.service';
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -20,6 +23,13 @@ import { MatMenuModule } from '@angular/material/menu';
     SharedModule,
     MatSidenavModule,
     MatMenuModule,
+    MatDividerModule,
+    FlexLayoutModule,
+    MatCardModule
+  ],
+  providers:[
+    DashboardService
   ]
 })
+
 export class DefaultModule { }

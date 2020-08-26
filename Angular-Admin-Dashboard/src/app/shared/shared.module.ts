@@ -8,12 +8,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
+import { RouterModule } from '@angular/router';
+import { AreaComponent } from './widgets/area/area.component';
+import {HighchartsChartModule} from 'highcharts-angular';
+import { CardsComponent } from './widgets/cards/cards.component';
+import { PieComponent } from './widgets/pie/pie.component'
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent, 
-    SidebarComponent
+    SidebarComponent, AreaComponent,
+    AreaComponent,
+    CardsComponent,
+    PieComponent
   ],
   imports: [
     CommonModule,
@@ -21,12 +30,20 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatMenuModule,
+    MatListModule,
+    RouterModule,
+    HighchartsChartModule
   ],
+  
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AreaComponent,
+    CardsComponent,
+    PieComponent
   ]
 
 })
