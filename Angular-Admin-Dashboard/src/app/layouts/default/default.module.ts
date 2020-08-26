@@ -11,6 +11,8 @@ import { MatDividerModule } from '@angular/material/divider'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card'
 import { DashboardService } from '../../modules/dashboard.service';
+import {MatPaginatorModule} from '@angular/material/paginator'
+import {MatTableModule} from '@angular/material/table'
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -25,7 +27,9 @@ import { DashboardService } from '../../modules/dashboard.service';
     MatMenuModule,
     MatDividerModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatPaginatorModule, 
+    MatTableModule,
   ],
   providers:[
     DashboardService
